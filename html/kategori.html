@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/kategori.css" />
+    <!-- boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Kategori</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <p>Buku<span>Kamu.</span></p>
+          </a>
+        </div>
+        <div class="pencarian">
+          <form class="form">
+            <label for="search">
+              <input required="" autocomplete="off" placeholder="Buku apa yang ingin kamu cari?" id="search" type="text" />
+              <div class="icon">
+                <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+                <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                  <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+              </div>
+              <button type="reset" class="close-btn">
+                <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    clip-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+        <div class="btn-header">
+          <div class="masuk">
+            <button id="btn-masuk" onclick="window.open('/formLogin/html/login-2.html');">Masuk</button>
+          </div>
+          <div class="daftar">
+            <div class="daftar">
+              <button id="btn-daftar" onclick="window.open('/formLogin/html/daftar-2.html');">Daftar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navigasi -->
+    <div class="navigasi">
+      <div class="container">
+        <div class="navbar">
+          <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="populer.html">Tepopuler</a>
+            <a href="terbaru.html">Terbaru</a>
+            <a href="kategori.html">Kategori</a>
+            <a href="kontak.html" class="kontak">Kontak</a>
+            <div class="animasi"></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- kategori -->
+    <div class="kategori">
+      <div class="container">
+        <div class="judul">
+          <p class="kate">Kategori</p>
+          <div id="back-button" class="kembali">
+            <button class="back">
+              <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+                <path
+                  d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"
+                ></path>
+              </svg>
+              <span>Kembali</span>
+            </button>
+          </div>
+        </div>
+        <!-- dropdown-1 -->
+        <div class="dropdown-1">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Buku Islam</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Alqur'an & Tafsir</a></li>
+            <li><a href="#">Bimbingan Islami</a></li>
+            <li><a href="#">Shalat, Doa & Ibadah</a></li>
+            <li><a href="#">Islam Umum</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-2 -->
+        <div class="dropdown-2">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Buku Rohani Kristen</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Alkitab</a></li>
+            <li><a href="#">Bimbingan Kristiani</a></li>
+            <li><a href="#">Gereja</a></li>
+            <li><a href="#">Teologi</a></li>
+            <li><a href="#">Kristen Umum</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-3 -->
+        <div class="dropdown-3">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Buku Anak</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Anak Islami</a></li>
+            <li><a href="#">Buku PAUD/TK</a></li>
+            <li><a href="#">Calistung</a></li>
+            <li><a href="#">Cerita Anak</a></li>
+            <li><a href="#">Komik Anak</a></li>
+            <li><a href="#">Menggambar & Mewarnai</a></li>
+            <li><a href="#">Pendidikan Anak</a></li>
+            <li><a href="#">Anak Umum</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-4 -->
+        <div class="dropdown-4">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Buku Sekolah</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Buku SMA</a></li>
+            <li><a href="#">Buku SMK</a></li>
+            <li><a href="#">Buku SMP</a></li>
+            <li><a href="#">Buku SD</a></li>
+            <li><a href="#">Buku Sekolah Umum</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-5 -->
+        <div class="dropdown-5">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Bahasa & Kamus</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Bahasa Indonesia</a></li>
+            <li><a href="#">Bahasa Inggris</a></li>
+            <li><a href="#">Kamus</a></li>
+            <li><a href="#">Bahasa</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-6 -->
+        <div class="dropdown-6">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Biografi & Memoar</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Pemimpin & Tokoh</a></li>
+            <li><a href="#">Profesional & Akademisi</a></li>
+            <li><a href="#">Seniman & Atlet</a></li>
+            <li><a href="#">Biografi</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-7 -->
+        <div class="dropdown-7">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Bisnis & Keuangan</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Akutansi</a></li>
+            <li><a href="#">Bisnis & Kewirausahaan</a></li>
+            <li><a href="#">Ekonomi</a></li>
+            <li><a href="#">Keuangan</a></li>
+            <li><a href="#">Manajemen</a></li>
+            <li><a href="#">Pemasaran</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-8 -->
+        <div class="dropdown-8">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Hobi & Keterampilan</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Hobi</a></li>
+            <li><a href="#">Keterampilan</a></li>
+            <li><a href="#">Masakan</a></li>
+            <li><a href="#">Wisata</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-9 -->
+        <div class="dropdown-9">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Hukum</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Hukum Bisnis</a></li>
+            <li><a href="#">Hukum Islam</a></li>
+            <li><a href="#">Ilmu Hukum</a></li>
+            <li><a href="#">Undang-Undang</a></li>
+            <li><a href="#">Pidana & Perdata</a></li>
+            <li><a href="#">Hukum Umum</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-10 -->
+        <div class="dropdown-10">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Kedokteran & Kesehatan</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Kebidanan</a></li>
+            <li><a href="#">Kedokteran</a></li>
+            <li><a href="#">Keperawatan</a></li>
+            <li><a href="#">Kesehatan</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-11 -->
+        <div class="dropdown-11">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Komputer & Internet</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Aplikasi Perkantoran</a></li>
+            <li><a href="#">Internet</a></li>
+            <li><a href="#">Komputer Grafis</a></li>
+            <li><a href="#">Pemrograman</a></li>
+            <li><a href="#">Teknik & Ilmu Komputer</a></li>
+            <li><a href="#">Komputer</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-12 -->
+        <div class="dropdown-12">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Novel & Sastra</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Komik</a></li>
+            <li><a href="#">Misteri & Thriller</a></li>
+            <li><a href="#">Novel Fantasi</a></li>
+            <li><a href="#">Novel Remaja</a></li>
+            <li><a href="#">Novel Roman</a></li>
+            <li><a href="#">Sastra & Cerpen</a></li>
+            <li><a href="#">Novel</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-13 -->
+        <div class="dropdown-13">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Pertanian & Lingkungan Hidup</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Pertanian</a></li>
+            <li><a href="#">Peternakan</a></li>
+            <li><a href="#">Lingkungan Hidup</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-14 -->
+        <div class="dropdown-14">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Pendidikan & Perguruan</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Keguruan</a></li>
+            <li><a href="#">Pendidikan</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-15 -->
+        <div class="dropdown-15">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Psikologi & Pengembangan Diri</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Inspirasi</a></li>
+            <li><a href="#">Parenting</a></li>
+            <li><a href="#">Pengembangan Diri</a></li>
+            <li><a href="#">Psikologi</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-16 -->
+        <div class="dropdown-16">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Refensi & Ensiklopedi</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Ensiklopedi</a></li>
+            <li><a href="#">Profesi</a></li>
+            <li><a href="#">Referensi</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-17 -->
+        <div class="dropdown-17">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Sejarah, Budaya & Filsafat</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Budaya</a></li>
+            <li><a href="#">Sejarah</a></li>
+            <li><a href="#">Filsafat</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-18 -->
+        <div class="dropdown-18">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Sosial & Politik</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Pemerintahan</a></li>
+            <li><a href="#">Politik</a></li>
+            <li><a href="#">Sosial</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-19 -->
+        <div class="dropdown-19">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Teknik & Ilmu Pengetahuan</div>
+          <ul class="dropdown-content">
+            <li><a href="#">Desain & Arsitektur</a></li>
+            <li><a href="#">Matematika & IPA</a></li>
+            <li><a href="#">Statistik & Penelitian</a></li>
+            <li><a href="#">Teknik</a></li>
+            <li><a href="#">Teknik Umum</a></li>
+          </ul>
+        </div>
+        <!-- dropdown-20 -->
+        <div class="dropdown-20">
+          <input class="dropdown-toggle" type="text" />
+          <div class="dropdown-text">Buku Umum</div>
+          <ul class="dropdown-content">
+            <li><a href="populer.html">Terpopuler</a></li>
+            <li><a href="terbaru.html">Terbaru</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="isi-footer">
+          <div class="left">
+            <div class="heading">
+              <p>Buku<span>Kamu.</span></p>
+            </div>
+            <div class="subheading">
+              <p>Merupakan tempat terbaik untuk mengulas buku</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="baris-1">
+              <h3>Navigasi</h3>
+              <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="populer.html">Terpopuler</a></li>
+                <li><a href="terbaru.html">Terbaru</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+              </ul>
+            </div>
+            <div class="baris-2">
+              <h3>Perusahaan</h3>
+              <ul>
+                <li><a href="#">bukukamu@gmail.com</a></li>
+                <li><a href="#">Jl. Swadaya II No. 47</a></li>
+                <li><a href="#">Depok, Jawa Barat</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="isifooter-2">
+          <div class="isi-kiri">
+            <p>&copy;2022 BukuKamu. All rights reserved.</p>
+          </div>
+          <div class="isi-kanan">
+            <a href="#">
+              <a href="https://wa.me/628161120362?text=contoh%20isi%20pesan%20dikirim%20via%20whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            </a>
+            <a href="#">
+              <a href="https://web.facebook.com/badol.kumal"><i class="bx bxl-facebook-square"></i></a>
+            </a>
+            <a href="#">
+              <a href="https://www.instagram.com/namasayafarhan_/"><i class="bx bxl-instagram"></i></a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- javascript -->
+    <script src="../javascript/kategori.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/kontak.css" />
+    <!-- boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Kontak Kami</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <p>Buku<span>Kamu.</span></p>
+          </a>
+        </div>
+        <div class="pencarian">
+          <form class="form">
+            <label for="search">
+              <input required="" autocomplete="off" placeholder="Buku apa yang ingin kamu cari?" id="search" type="text" />
+              <div class="icon">
+                <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+                <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                  <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+              </div>
+              <button type="reset" class="close-btn">
+                <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    clip-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+        <div class="btn-header">
+          <div class="masuk">
+            <button id="btn-masuk" onclick="window.open('/formLogin/html/login-2.html');">Masuk</button>
+          </div>
+          <div class="daftar">
+            <div class="daftar">
+              <button id="btn-daftar" onclick="window.open('/formLogin/html/daftar-2.html');">Daftar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navigasi -->
+    <div class="navigasi">
+      <div class="container">
+        <div class="navbar">
+          <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="populer.html">Terpopuler</a>
+            <a href="terbaru.html">Terbaru</a>
+            <a href="kategori.html">Kategori</a>
+            <a href="kontak.html">Kontak</a>
+            <div class="animasi"></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- kontak -->
+    <div class="kontak">
+      <div class="container">
+        <div class="isiSatu">
+          <div class="bullet">
+            <img src="../image/bullet.png" alt="" />
+          </div>
+          <div id="back-button" class="kembali">
+            <img src="../image/close-biru.png" alt="" />
+          </div>
+        </div>
+        <h1 class="judul">Kontak <span>Kami.</span></h1>
+        <div class="input">
+          <div class="kiri">
+            <div class="nama">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">Nama</label>
+            </div>
+            <div class="email">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">Email</label>
+            </div>
+            <div class="subjek">
+              <input type="text" required="" autocomplete="off" />
+              <label for="name">Subjek</label>
+            </div>
+          </div>
+          <div class="kanan">
+            <div class="pesan">
+              <textarea name="" id="" placeholder="Subjek" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="kirim">
+          <button class="btn btn-kirim">Kirim</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="isi-footer">
+          <div class="left">
+            <div class="heading">
+              <p>Buku<span>Kamu.</span></p>
+            </div>
+            <div class="subheading">
+              <p>Merupakan tempat terbaik untuk mengulas buku</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="baris-1">
+              <h3>Navigasi</h3>
+              <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="populer.html">Terpopuler</a></li>
+                <li><a href="terbaru.html">Terbaru</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+              </ul>
+            </div>
+            <div class="baris-2">
+              <h3>Perusahaan</h3>
+              <ul>
+                <li><a href="#">bukukamu@gmail.com</a></li>
+                <li><a href="#">Jl. Swadaya II No. 47</a></li>
+                <li><a href="#">Depok, Jawa Barat</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="isifooter-2">
+          <div class="isi-kiri">
+            <p>&copy;2022 BukuKamu. All rights reserved.</p>
+          </div>
+          <div class="isi-kanan">
+            <a href="#">
+              <a href="https://wa.me/628161120362?text=contoh%20isi%20pesan%20dikirim%20via%20whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            </a>
+            <a href="#">
+              <a href="https://web.facebook.com/badol.kumal"><i class="bx bxl-facebook-square"></i></a>
+            </a>
+            <a href="#">
+              <a href="https://www.instagram.com/namasayafarhan_/"><i class="bx bxl-instagram"></i></a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // kembali
+      document.getElementById("back-button").addEventListener("click", function () {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>

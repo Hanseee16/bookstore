@@ -1,0 +1,310 @@
+:root {
+  /* color */
+  --biru: #0e1555;
+  --kuning: #ffd717;
+  --abu-abu: #7b7b7b;
+  --putih: #ffffff;
+
+  /* font */
+  --poppins: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 400px;
+  height: 600px;
+  background-color: #0e1555;
+}
+
+.masuk .close {
+  display: flex;
+  position: absolute;
+  margin-left: 345px;
+  margin-top: 10px;
+}
+
+.close img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.masuk .kembali {
+  display: flex;
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.kembali img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.content-1 {
+  max-width: 280px;
+  height: 450px;
+}
+.masuk .container {
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+.masuk .content-1 {
+  margin: auto;
+}
+.masuk .judul {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: var(--poppins);
+  color: var(--kuning);
+}
+
+.masuk .email {
+  margin-top: 60px;
+}
+
+.form-control-email {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 100%;
+}
+
+.form-control-email input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control-email input:focus,
+.form-control-email input:valid {
+  outline: 0;
+  border-bottom-color: var(--kuning);
+}
+
+.form-control-email label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control-email label span {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Verdana", sans-serif;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control-email input:focus + label span,
+.form-control-email input:valid + label span {
+  color: var(--putih);
+  transform: translateY(-30px);
+}
+
+.masuk .password {
+  margin-top: 15px;
+}
+.form-control-pass {
+  position: relative;
+  margin: 20px 0 20px;
+  width: 100%;
+}
+
+.form-control-pass input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control-pass input:focus,
+.form-control-pass input:valid {
+  outline: 0;
+  border-bottom-color: var(--kuning);
+}
+
+.form-control-pass label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control-pass label span {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Verdana", sans-serif;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control-pass input:focus + label span,
+.form-control-pass input:valid + label span {
+  color: var(--putih);
+  transform: translateY(-30px);
+}
+
+.masuk .lupaPass {
+  margin-top: 10px;
+}
+.lupaPass p {
+  text-align: right;
+  color: var(--putih);
+  font-size: 15px;
+  font-family: "Arial", sans-serif;
+}
+
+.masuk .button {
+  margin-top: 45px;
+}
+.button #btn-masuk {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #ffd717;
+  font-size: 20px;
+  font-family: var(--poppins);
+  background: #ffd717;
+  color: #ffffff;
+}
+
+#btn-masuk:hover {
+  animation: squeeze3124 0.9s both;
+  cursor: pointer;
+  border: 2px solid #ffd717;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+}
+
+@keyframes squeeze3124 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.masuk .punya {
+  margin-top: 30px;
+}
+.punya p {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Arial", sans-serif;
+  color: var(--putih);
+}
+.punya span {
+  color: var(--kuning);
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 350px;
+    height: 600px;
+    background-color: #0e1555;
+  }
+  .masuk .close {
+    display: flex;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: 10px;
+  }
+  .close img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .masuk .kembali {
+    display: flex;
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .kembali img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .content-1 {
+    max-width: 250px;
+  }
+  .masuk .container {
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .masuk .content-1 {
+    margin: auto;
+  }
+  .masuk .judul {
+    padding-top: 80px;
+    font-size: 25px;
+  }
+
+  .masuk .email {
+    margin-top: 50px;
+  }
+  .button #btn-masuk {
+    margin-top: 35px;
+  }
+}

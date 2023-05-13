@@ -1,0 +1,826 @@
+:root {
+  /* color */
+  --biru: #0e1555;
+  --kuning: #ffd717;
+  --abu-abu: #7b7b7b;
+  --putih: #ffffff;
+
+  /* font */
+  --poppins: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  max-width: 1000px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: rgb(255, 255, 255);
+  height: 90px;
+  box-shadow: 0 1px 10px rgba(30, 111, 92, 0.137);
+}
+.header .container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo p {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--biru);
+}
+.logo span {
+  color: var(--kuning);
+}
+.header .pencarian {
+  display: flex;
+}
+
+.pencarian .form {
+  --input-bg: rgba(230, 230, 230, 0.671);
+  /*  background of input */
+  --padding: 1.5em;
+  --rotate: 80deg;
+  /*  rotation degree of input*/
+  --gap: 2em;
+  /*  gap of items in input */
+  --icon-change-color: #0e1555;
+  /*  when rotating changed icon color */
+  --height: 40px;
+  /*  height */
+  width: 350px;
+  padding-inline-end: 1em;
+  /*  change this for padding in the end of input */
+  background: var(--input-bg);
+  position: relative;
+  border-radius: 10px;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--height);
+}
+
+.form input {
+  width: 100%;
+  padding-inline-start: calc(var(--padding) + var(--gap));
+  outline: none;
+  background: none;
+  border: 0;
+}
+/* style for both icons -- search,close */
+.form svg {
+  /* display: block; */
+  color: #111;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  height: 15px;
+}
+
+/* search icon */
+.icon {
+  position: absolute;
+  left: var(--padding);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* arrow-icon*/
+.swap-off {
+  transform: rotate(-80deg);
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button */
+.close-btn {
+  /* removing default bg of button */
+  background: none;
+  border: none;
+  right: calc(var(--padding) - var(--gap));
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 0;
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.form input:focus ~ .icon {
+  transform: rotate(var(--rotate)) scale(1.3);
+}
+
+.form input:focus ~ .icon .swap-off {
+  opacity: 1;
+  transform: rotate(-80deg);
+  visibility: visible;
+  color: var(--icon-change-color);
+}
+
+.form input:focus ~ .icon .swap-on {
+  opacity: 0;
+  visibility: visible;
+}
+
+.form input:valid ~ .icon {
+  transform: scale(1.3) rotate(var(--rotate));
+}
+
+.form input:valid ~ .icon .swap-off {
+  opacity: 1;
+  visibility: visible;
+  color: var(--icon-change-color);
+  cursor: pointer;
+}
+
+.form input:valid ~ .icon .swap-on {
+  opacity: 0;
+  visibility: visible;
+}
+
+.form input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0s;
+  cursor: pointer;
+}
+
+.header .btn-header {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-header #btn-masuk {
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid #ffd717;
+  border-radius: 5px;
+  outline: none;
+  color: #ffd717;
+  font-size: 17px;
+}
+
+#btn-masuk:hover {
+  background: #ffd717;
+  color: #ffffff;
+  animation: squeeze3124 0.9s both;
+  cursor: pointer;
+}
+
+@keyframes squeeze3124 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.btn-header #btn-daftar {
+  width: 100px;
+  height: 40px;
+  background: #0e1555;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid #0e1555;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+#btn-daftar:hover {
+  background: #ffffff;
+  color: #0e1555;
+  animation: squeeze3124 0.9s both;
+  cursor: pointer;
+}
+
+@keyframes squeeze3124 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* navigasi */
+.navigasi .container {
+  margin: 105px auto;
+}
+.navigasi .navbar {
+  display: flex;
+  justify-content: center;
+}
+.navbar nav {
+  margin: auto;
+  position: relative;
+  width: 602px;
+  height: 55px;
+  border-radius: 50px;
+  font-size: 0;
+  border: 1px solid #ffffff;
+  box-shadow: 3px 3px 3px #dadada;
+}
+
+nav a {
+  line-height: 55px;
+  height: 100%;
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  color: #9b9b9b;
+  cursor: pointer;
+}
+
+nav .animasi {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 50px;
+}
+
+a:nth-child(1) {
+  width: 120px;
+}
+
+a:nth-child(2) {
+  width: 120px;
+}
+
+a:nth-child(3) {
+  width: 120px;
+}
+
+a:nth-child(4) {
+  width: 120px;
+}
+
+a:nth-child(5) {
+  width: 120px;
+}
+
+a:nth-child(1):hover {
+  color: #ffffff;
+}
+
+a:nth-child(2):hover {
+  color: #ffffff;
+}
+
+a:nth-child(3):hover {
+  color: #ffffff;
+}
+
+a:nth-child(4):hover {
+  color: #ffffff;
+}
+
+a:nth-child(5):hover {
+  color: #ffffff;
+}
+
+nav a:nth-child(1):hover ~ .animasi {
+  width: 120px;
+  left: 0;
+  background-color: #0e1555;
+}
+
+nav a:nth-child(2):hover ~ .animasi {
+  width: 120px;
+  left: 120px;
+  background-color: #0e1555;
+}
+
+nav a:nth-child(3):hover ~ .animasi {
+  width: 120px;
+  left: 240px;
+  background-color: #0e1555;
+}
+
+nav a:nth-child(4):hover ~ .animasi {
+  width: 120px;
+  left: 360px;
+  background-color: #0e1555;
+}
+
+nav a:nth-child(5):hover ~ .animasi {
+  width: 122px;
+  left: 480px;
+  background-color: #0e1555;
+}
+
+/* kategori */
+.kategori {
+  margin-top: -50px;
+}
+
+.kategori .container {
+  margin: auto;
+}
+
+.kategori .judul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.judul .kate {
+  font-size: 35px;
+  font-weight: bold;
+  color: #0e1555;
+}
+
+.back {
+  display: flex;
+  height: 50px;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  box-shadow: 5px 5px 5px #eeeeee;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.back span {
+  color: #282936;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.back > svg {
+  margin-right: 5px;
+  transition: all 0.4s ease-in;
+}
+
+.back:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.back:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
+
+/* kategori */
+
+/* dropdown-1 */
+.dropdown-1 {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 20;
+}
+
+.dropdown-text {
+  padding-left: 10px;
+  cursor: pointer;
+  position: absolute;
+  text-indent: 10px;
+  line-height: 42px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.dropdown-text:after {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #555 transparent transparent transparent;
+}
+
+.dropdown-content a {
+  padding-left: 20px;
+  color: rgb(70, 70, 70);
+  text-shadow: 0 1px #fff;
+}
+
+.dropdown-toggle {
+  font-size: 0;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 1px;
+  background: transparent;
+  text-indent: -10px;
+  height: 34px;
+  width: 100%;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+.dropdown-content {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  list-style-type: none;
+  position: absolute;
+  top: 32px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 3px;
+  text-indent: 10px;
+  line-height: 32px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.dropdown-content a {
+  display: block;
+  width: auto;
+}
+
+.dropdown-content a:hover {
+  color: #050505;
+  font-size: 17px;
+}
+
+.dropdown-toggle:hover ~ .dropdown-text,
+.dropdown-toggle:focus ~ .dropdown-text {
+  background-color: #e8e8e8;
+}
+
+.dropdown-toggle:focus ~ .dropdown-text {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset, 0 1px 0 rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+
+.dropdown-toggle:focus ~ .dropdown-text:after {
+  border-width: 0 4px 5px 4px;
+  border-color: transparent transparent #555 transparent;
+}
+
+.dropdown-content:hover,
+.dropdown-toggle:focus ~ .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  top: 52px;
+}
+
+/* dropdown-2 */
+.dropdown-2 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 19;
+}
+
+/* dropdown-3 */
+.dropdown-3 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 18;
+}
+
+/* dropdown-4 */
+.dropdown-4 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 17;
+}
+
+/* dropdown-5 */
+.dropdown-5 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 16;
+}
+
+/* dropdown-6 */
+.dropdown-6 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 15;
+}
+
+/* dropdown-7 */
+.dropdown-7 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 14;
+}
+
+/* dropdown-8 */
+.dropdown-8 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 13;
+}
+
+/* dropdown-9 */
+.dropdown-9 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 12;
+}
+
+/* dropdown-10 */
+.dropdown-10 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 11;
+}
+
+/* dropdown-11 */
+.dropdown-11 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 10;
+}
+/* dropdown-12 */
+.dropdown-12 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 9;
+}
+/* dropdown-13 */
+.dropdown-13 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 8;
+}
+/* dropdown-14 */
+.dropdown-14 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 7;
+}
+/* dropdown-15 */
+.dropdown-15 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 6;
+}
+/* dropdown-16 */
+.dropdown-16 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 5;
+}
+/* dropdown-17 */
+.dropdown-17 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 4;
+}
+/* dropdown-18 */
+.dropdown-18 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 3;
+}
+/* dropdown-19 */
+.dropdown-19 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 2;
+}
+/* dropdown-20 */
+.dropdown-20 {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 99%;
+  z-index: 1;
+}
+
+/* footer */
+.footer {
+  background-color: #0e1555;
+  height: 350px;
+  margin-top: 300px;
+}
+.footer .container {
+  margin: auto;
+}
+.footer .isi-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.footer .heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffd717;
+}
+.heading span {
+  color: var(--putih);
+}
+.footer .subheading {
+  margin-top: 10px;
+}
+.subheading p {
+  font-size: 20px;
+  color: var(--putih);
+}
+.footer .right {
+  display: flex;
+  gap: 100px;
+}
+.right h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--kuning);
+}
+.right ul li {
+  padding-top: 10px;
+}
+.right a {
+  color: rgb(214, 214, 214);
+  font-size: 18px;
+}
+.footer .isifooter-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+.isifooter-2 .isi-kiri {
+  font-size: 16px;
+  color: var(--putih);
+}
+
+.isifooter-2 .isi-kanan i {
+  font-size: 35px;
+  color: #ffd500;
+  padding: 4px;
+}
+
+.isi-kanan i {
+  transition: all 0.2s linear;
+}
+
+.isi-kanan i:hover {
+  transform: translateY(-2px);
+}

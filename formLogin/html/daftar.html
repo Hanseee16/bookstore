@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/daftar.css" />
+    <title>Buat Akun</title>
+  </head>
+  <body>
+    <div class="masuk">
+      <div class="container">
+        <div onclick="goClose()" class="close">
+          <img src="../image/close.png" alt="" />
+        </div>
+        <div id="back-button" class="kembali">
+          <img src="../image/kembali.png" alt="" />
+        </div>
+        <div class="content-1">
+          <h1 class="judul">Buat Akun</h1>
+          <div class="nama">
+            <div class="form-control-nama">
+              <input type="value" required="" />
+              <label>
+                <span style="transition-delay: 0ms">N</span>
+                <span style="transition-delay: 50ms">a</span>
+                <span style="transition-delay: 100ms">m</span>
+                <span style="transition-delay: 150ms">a</span>
+              </label>
+            </div>
+          </div>
+          <div class="email">
+            <div class="form-control-email">
+              <input type="value" required="" />
+              <label>
+                <span style="transition-delay: 0ms">E</span>
+                <span style="transition-delay: 50ms">m</span>
+                <span style="transition-delay: 100ms">a</span>
+                <span style="transition-delay: 150ms">i</span>
+                <span style="transition-delay: 200ms">l</span>
+              </label>
+            </div>
+          </div>
+          <div class="pass">
+            <div class="form-control-pass">
+              <input type="password" required="" />
+              <label>
+                <span style="transition-delay: 0ms">K</span>
+                <span style="transition-delay: 50ms">a</span>
+                <span style="transition-delay: 100ms">t</span>
+                <span style="transition-delay: 150ms">a</span>
+                <span style="transition-delay: 200ms"></span>
+                <span style="transition-delay: 200ms">S</span>
+                <span style="transition-delay: 200ms">a</span>
+                <span style="transition-delay: 200ms">n</span>
+                <span style="transition-delay: 200ms">d</span>
+                <span style="transition-delay: 200ms">i</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="ceklis">
+            <div class="cntr">
+              <input checked="" type="checkbox" id="cbx" class="hidden-xs-up" />
+              <label for="cbx" class="cbx"></label>
+            </div>
+            <p class="subheading">Saya Setuju dengan <span>Ketentuan Layanan</span> dan <span>Kebijakan Privasi</span></p>
+          </div>
+          <a href="../html/login.html">
+            <div class="button">
+              <button id="btn-buatakun">Buat Akun</button>
+            </div>
+          </a>
+          <div class="punya">
+            <p>
+              Sudah punya akun?
+              <a href="../html/login.html"><span>Masuk</span> </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // close
+      function goClose() {
+        window.close();
+      }
+
+      // kembali
+      document.getElementById("back-button").addEventListener("click", function () {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>

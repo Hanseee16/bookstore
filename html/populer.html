@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/populer.css" />
+    <!-- boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Terpopuler Halaman 1</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <p>Buku<span>Kamu.</span></p>
+          </a>
+        </div>
+        <div class="pencarian">
+          <form class="form">
+            <label for="search">
+              <input required="" autocomplete="off" placeholder="Buku apa yang ingin kamu cari?" id="search" type="text" />
+              <div class="icon">
+                <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+                <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                  <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+              </div>
+              <button type="reset" class="close-btn">
+                <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    clip-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+        <div class="btn-header">
+          <div class="masuk">
+            <button id="btn-masuk" onclick="window.open('../formLogin/html/login-2.html');">Masuk</button>
+          </div>
+          <div class="daftar">
+            <div class="daftar">
+              <button id="btn-daftar" onclick="window.open('../formLogin/html/daftar-2.html');">Daftar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navigasi -->
+    <div class="navigasi">
+      <div class="container">
+        <div class="navbar">
+          <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="populer.html">Terpopuler</a>
+            <a href="terbaru.html">Terbaru</a>
+            <a href="kategori.html">Kategori</a>
+            <a href="kontak.html">Kontak</a>
+            <div class="animasi"></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- populer-1 -->
+    <div class="populer-1">
+      <div class="container">
+        <div class="judul">
+          <p class="populer">Terpopuler</p>
+          <div id="back-button" class="kembali">
+            <button class="back">
+              <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+                <path
+                  d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"
+                ></path>
+              </svg>
+              <span>Kembali</span>
+            </button>
+          </div>
+        </div>
+        <div class="produk">
+          <!-- buku-1 -->
+          <div class="card">
+            <a href="#terpopulerbuku-1">
+              <img src="../Image Terpopuler/Buku-1.jpg" alt="" class="buku-1" />
+              <h3 class="card__title">Mencari Simetri</h3>
+              <p class="card__content">Annisa Ihsani</p>
+              <div class="card__date">Rp 26.500</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-1">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-1" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/Buku-1.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Mencari Simetri</h1>
+                  <h2>Annisa Ihsani</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>26.500</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-2 -->
+          <div class="card">
+            <a href="#terpopulerbuku-2">
+              <img src="../Image Terpopuler/Buku-2.jpg" alt="" class="buku-2" />
+              <h3 class="card__title">Filosofi Teras</h3>
+              <p class="card__content">Hendry Manampiring</p>
+              <div class="card__date">Rp 83.300</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-2">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-2" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/Buku-2.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Filosofi Teras</h1>
+                  <h2>Hendry Manampiring</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>83.300</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-3 -->
+          <div class="card">
+            <a href="#terpopulerbuku-3">
+              <img src="../Image Terpopuler/buku-3.png" alt="" class="buku-3" />
+              <h3 class="card__title">Bicara Itu Ada Seninya</h3>
+              <p class="card__content">Oh Su Hyang</p>
+              <div class="card__date">Rp 54.000</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-3">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-3" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-3.png" class="buku-3" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Bicara Itu Ada Seninya</h1>
+                  <h2>Oh Su Hyang</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>54.000</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-4 -->
+          <div class="card">
+            <a href="#terpopulerbuku-4">
+              <img src="../Image Terpopuler/buku-4.jpg" alt="" class="buku-4" />
+              <h3 class="card__title">Seribu Wajah Ayah</h3>
+              <p class="card__content">Nurun Ala</p>
+              <div class="card__date">Rp 41.250</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-4">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-4" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-4.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Seribu Wajah Ayah</h1>
+                  <h2>Nurun Ala</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>41.250</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- populer-2 -->
+    <div class="populer-2">
+      <div class="container">
+        <div class="produk">
+          <!-- buku-5 -->
+          <div class="card">
+            <a href="#terpopulerbuku-5">
+              <img src="../Image Terpopuler/buku-5.jpg" alt="" class="buku-5" />
+              <h3 class="card__title">Matahari Minor</h3>
+              <p class="card__content">Tere Liye</p>
+              <div class="card__date">Rp 80.750</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-5">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-5" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-5.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Matahari Minor</h1>
+                  <h2>Tere Liye</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>80.750</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-6 -->
+          <div class="card">
+            <a href="#terpopulerbuku-6">
+              <img src="../Image Terpopuler/buku-6.jpg" alt="" class="buku-6" />
+              <h3 class="card__title">Serdadu Pantai</h3>
+              <p class="card__content">Laode Insan</p>
+              <div class="card__date">Rp 21.100</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-6">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-6" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-6.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Serdadu Pantai</h1>
+                  <h2>Laode Insan</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>21.100</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-7 -->
+          <div class="card">
+            <a href="#terpopulerbuku-7">
+              <img src="../Image Terpopuler/buku-7.jpg" alt="" class="buku-7" />
+              <h3 class="card__title">Crash Into You</h3>
+              <p class="card__content">Aliazalea</p>
+              <div class="card__date">Rp 19.500</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-7">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-7" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-7.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Crash Into You</h1>
+                  <h2>Aliazalea</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>19.500</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-8 -->
+          <div class="card">
+            <a href="#terpopulerbuku-8">
+              <img src="../Image Terpopuler/buku-8.jpg" alt="" class="buku-8" />
+              <h3 class="card__title">Waktu Helena</h3>
+              <p class="card__content">Zaky Yamani</p>
+              <div class="card__date">Rp 18.000</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-8">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-8" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-8.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Waktu Helena</h1>
+                  <h2>Zaky Yamani</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>18.000</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- populer-3 -->
+    <div class="populer-3">
+      <div class="container">
+        <div class="produk">
+          <!-- buku-9 -->
+          <div class="card">
+            <a href="#terpopulerbuku-9">
+              <img src="../Image Terpopuler/buku-9.jpg" alt="" class="buku-9" />
+              <h3 class="card__title">Secret: Rahasia</h3>
+              <p class="card__content">Rhonda Byrne</p>
+              <div class="card__date">Rp 82.500</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-9">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-9" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-9.jpg" class="buku-9" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Secret: Rahasia</h1>
+                  <h2>Rhonda Byrne</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>82.500</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-10 -->
+          <div class="card">
+            <a href="#terpopulerbuku-10">
+              <img src="../Image Terpopuler/buku-10.jpeg" alt="" class="buku-10" />
+              <h3 class="card__title">Novel Salvation of a Saint</h3>
+              <p class="card__content">Keigo Higashing</p>
+              <div class="card__date">Rp 63.300</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-10">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-10" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-10.jpeg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Novel Salvation of a Saint</h1>
+                  <h2>Keigo Higashing</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>63.300</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-11 -->
+          <div class="card">
+            <a href="#terpopulerbuku-11">
+              <img src="../Image Terpopuler/buku-11.jpg" alt="" class="buku-11" />
+              <h3 class="card__title">Melihat Api Bekerja</h3>
+              <p class="card__content">M. Aan Mansyur</p>
+              <div class="card__date">Rp 28.800</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-11">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-11" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-11.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Melihat Api Bekerja</h1>
+                  <h2>M. Aan Mansyur</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>28.800</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-12 -->
+          <div class="card">
+            <a href="#terpopulerbuku-12">
+              <img src="../Image Terpopuler/buku-12.jpg" alt="" class="buku-12" />
+              <h3 class="card__title">Yang diacak-acak Seprai, Yang Berantakan Hati</h3>
+              <p class="card__content">Faizal Reza</p>
+              <div class="card__date">Rp 18.000</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-12">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-12" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-12.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Yang diacak-acak Seprai, Yang Berantakan Hati</h1>
+                  <h2>Faizal Reza</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>18.000</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- populer-4 -->
+    <div class="populer-4">
+      <div class="container">
+        <div class="produk">
+          <!-- buku-13 -->
+          <div class="card">
+            <a href="#terpopulerbuku-13">
+              <img src="../Image Terpopuler/buku-13.jpg" alt="" class="buku-13" />
+              <h3 class="card__title">Gray Mountain</h3>
+              <p class="card__content">John Grisham</p>
+              <div class="card__date">Rp 36.000</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-13">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-13" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-13.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Gray Mountain</h1>
+                  <h2>John Grisham</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>36.000</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-14 -->
+          <div class="card">
+            <a href="#terpopulerbuku-14">
+              <img src="../Image Terpopuler/buku-14.jpg" alt="" class="buku-14" />
+              <h3 class="card__title">Miss Pesimis</h3>
+              <p class="card__content">Aliazalea</p>
+              <div class="card__date">Rp 19.500</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-14">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-14" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-14.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Miss Pesimis</h1>
+                  <h2>Aliazalea</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>19.500</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-15 -->
+          <div class="card">
+            <a href="#terpopulerbuku-15">
+              <img src="../Image Terpopuler/buku-15.jpg" alt="" class="buku-15" />
+              <h3 class="card__title">Belenggu Ilse</h3>
+              <p class="card__content">Ruwi Meita</p>
+              <div class="card__date">Rp 22.500</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-15">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-15" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-15.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Belenggu Ilse</h1>
+                  <h2>Ruwi Meita</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>22.500</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-16 -->
+          <div class="card">
+            <a href="#terpopulerbuku-16">
+              <img src="../Image Terpopuler/buku-16.jpg" alt="" class="buku-16" />
+              <h3 class="card__title">Starting Over</h3>
+              <p class="card__content">Titi Sanaria</p>
+              <div class="card__date">Rp 27.001</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-16">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-16" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-16.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Starting Over</h1>
+                  <h2>Titi Sanaria</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>27.001</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- populer-5 -->
+    <div class="populer-5">
+      <div class="container">
+        <div class="produk">
+          <!-- buku-17 -->
+          <div class="card">
+            <a href="#terpopulerbuku-17">
+              <img src="../Image Terpopuler/buku-17.jpg" alt="" class="buku-17" />
+              <h3 class="card__title">Merawat Luka Batin</h3>
+              <p class="card__content">Dr Jiemi Ardia</p>
+              <div class="card__date">Rp 73.500</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-17">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-17" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-17.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Merawat Luka Batin</h1>
+                  <h2>Dr Jiemi Ardia</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>73.500</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-18 -->
+          <div class="card">
+            <a href="#terpopulerbuku-18">
+              <img src="../Image Terpopuler/buku-18.jpg" alt="" class="buku-18" />
+              <h3 class="card__title">CITYLITE: Midnight Prince</h3>
+              <p class="card__content">Titi Sanaria</p>
+              <div class="card__date">Rp 19.440</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-18">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-18" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-18.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>CITYLITE: Midnight Prince</h1>
+                  <h2>Titi Sanaria</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>19.440</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-19 -->
+          <div class="card">
+            <a href="#terpopulerbuku-19">
+              <img src="../Image Terpopuler/buku-19.jpg" alt="" class="buku-19" />
+              <h3 class="card__title">Tanjung Kemarau</h3>
+              <p class="card__content">Royyan Julian</p>
+              <div class="card__date">Rp 70.000</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-19">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-19" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-19.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Tanjung Kemarau</h1>
+                  <h2>Royyan Julian</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>70.000</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- buku-20 -->
+          <div class="card">
+            <a href="#terpopulerbuku-20">
+              <img src="../Image Terpopuler/buku-20.jpg" alt="" class="buku-20" />
+              <h3 class="card__title">Buku Panduan Matematika Terapan</h3>
+              <p class="card__content">Triskaidekaman</p>
+              <div class="card__date">Rp 28.500</div>
+              <div class="card__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20" width="20">
+                  <path
+                    fill="#fff"
+                    d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="overlay" id="terpopulerbuku-20">
+            <div class="wrapper">
+              <div class="bullet">
+                <img src="../image/bullet.png" alt="" />
+              </div>
+              <div id="back-terpopulerbuku-20" class="kembali">
+                <img src="../image/close-biru.png" alt="" />
+              </div>
+              <div class="product-img">
+                <img src="../Image Terpopuler/buku-20.jpg" />
+              </div>
+              <div class="product-info">
+                <div class="product-text">
+                  <h1>Buku Panduan Matematika Terapan</h1>
+                  <h2>Triskaidekaman</h2>
+                </div>
+                <div class="product-price-btn">
+                  <p><span>Rp</span>28.500</p>
+                  <div class="beli">
+                    <button id="btn-beli">Beli Sekarang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- halaman -->
+    <div class="halaman">
+      <div class="container">
+        <div class="page">
+          <div class="kiri">
+            <a href="#">
+              <img src="../image/kiri.png" alt="" />
+            </a>
+          </div>
+          <div class="tengah">
+            <div class="satu">
+              <a href="#">
+                <img src="../image/satu.png" alt="" />
+              </a>
+            </div>
+            <div class="dua">
+              <a href="populerHal-2.html">
+                <img src="../image/dua.png" alt="" />
+              </a>
+            </div>
+            <div class="tiga">
+              <a href="populerHal-3.html">
+                <img src="../image/tiga.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="kanan">
+            <a href="populerHal-2.html">
+              <img src="../image/kanan.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="isi-footer">
+          <div class="left">
+            <div class="heading">
+              <p>Buku<span>Kamu.</span></p>
+            </div>
+            <div class="subheading">
+              <p>Merupakan tempat terbaik untuk mengulas buku</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="baris-1">
+              <h3>Navigasi</h3>
+              <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="populer.html">Terpopuler</a></li>
+                <li><a href="terbaru.html">Terbaru</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+              </ul>
+            </div>
+            <div class="baris-2">
+              <h3>Perusahaan</h3>
+              <ul>
+                <li><a href="#">bukukamu@gmail.com</a></li>
+                <li><a href="#">Jl. Swadaya II No. 47</a></li>
+                <li><a href="#">Depok, Jawa Barat</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="isifooter-2">
+          <div class="isi-kiri">
+            <p>&copy;2022 BukuKamu. All rights reserved.</p>
+          </div>
+          <div class="isi-kanan">
+            <a href="#">
+              <a href="https://wa.me/628161120362?text=contoh%20isi%20pesan%20dikirim%20via%20whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            </a>
+            <a href="#">
+              <a href="https://web.facebook.com/badol.kumal"><i class="bx bxl-facebook-square"></i></a>
+            </a>
+            <a href="#">
+              <a href="https://www.instagram.com/namasayafarhan_/"><i class="bx bxl-instagram"></i></a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/populer.js"></script>
+  </body>
+</html>

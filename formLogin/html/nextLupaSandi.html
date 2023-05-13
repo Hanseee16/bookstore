@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/nextLupaSandi.css" />
+    <title>Lupa Kata Sandi</title>
+  </head>
+  <body>
+    <div class="masuk">
+      <div class="container">
+        <div onclick="goClose()" class="close">
+          <img src="../image/close.png" alt="" />
+        </div>
+        <div id="back-button" class="kembali">
+          <img src="../image/kembali.png" alt="" />
+        </div>
+        <div class="content-1">
+          <h1 class="judul">Lupa Kata Sandi</h1>
+          <div class="pass-1">
+            <div class="form-control-pass-1">
+              <input type="value" required="" />
+              <label>
+                <span style="transition-delay: 0ms">K</span>
+                <span style="transition-delay: 50ms">a</span>
+                <span style="transition-delay: 100ms">t</span>
+                <span style="transition-delay: 150ms">a</span>
+                <span style="transition-delay: 200ms"></span>
+                <span style="transition-delay: 250ms">S</span>
+                <span style="transition-delay: 300ms">a</span>
+                <span style="transition-delay: 350ms">n</span>
+                <span style="transition-delay: 400ms">d</span>
+                <span style="transition-delay: 450ms">i</span>
+              </label>
+            </div>
+          </div>
+          <div class="pass-2">
+            <div class="form-control-pass-2">
+              <input type="value" required="" />
+              <label>
+                <span style="transition-delay: 0ms">K</span>
+                <span style="transition-delay: 50ms">o</span>
+                <span style="transition-delay: 100ms">n</span>
+                <span style="transition-delay: 150ms">f</span>
+                <span style="transition-delay: 200ms">i</span>
+                <span style="transition-delay: 250ms">r</span>
+                <span style="transition-delay: 300ms">m</span>
+                <span style="transition-delay: 350ms">a</span>
+                <span style="transition-delay: 400ms">s</span>
+                <span style="transition-delay: 450ms">i</span>
+                <span style="transition-delay: 500ms"></span>
+                <span style="transition-delay: 550ms">K</span>
+                <span style="transition-delay: 600ms">a</span>
+                <span style="transition-delay: 650ms">t</span>
+                <span style="transition-delay: 700ms">a</span>
+                <span style="transition-delay: 750ms"></span>
+                <span style="transition-delay: 800ms">S</span>
+                <span style="transition-delay: 850ms">a</span>
+                <span style="transition-delay: 900ms">n</span>
+                <span style="transition-delay: 950ms">d</span>
+                <span style="transition-delay: 1000ms">i</span>
+              </label>
+            </div>
+          </div>
+          <a href="../html/login.html">
+            <div class="button">
+              <button id="btn-riset">Riset Kata Sandi</button>
+            </div>
+          </a>
+          <div class="punya">
+            <p>
+              Sudah punya akun?
+              <a href="../html/login.html"><span>Masuk</span> </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // close
+      function goClose() {
+        window.close();
+      }
+
+      // kembali
+      document.getElementById("back-button").addEventListener("click", function () {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>
